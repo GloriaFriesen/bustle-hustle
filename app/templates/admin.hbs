@@ -4,7 +4,8 @@
 <ul>
   {{#each model as |story|}}
     {{story-tile story=story}}
-    {{/each}}
+    {{delete-story story=story destroyStory="destroyStory"}}
+  {{/each}}
 </ul>
 
 {{new-story saveStory="saveStory"}}
