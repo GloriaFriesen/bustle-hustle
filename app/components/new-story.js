@@ -10,8 +10,8 @@ export default Ember.Component.extend({
   saveStory() {
     var params = {
       headline: this.get('headline'),
-      author: this.get('author'),
-      image: this.get('image'),
+      author: this.get('author')? this.get('author') : "Anonymous",
+      image: this.get('image')? this.get('image') : "",
       content: this.get('content'),
       category: this.get('category'),
     };

@@ -5,9 +5,11 @@
   {{#each model as |story|}}
     {{story-tile story=story}}
     {{delete-story story=story destroyStory="destroyStory"}}
+    {{update-story story=story update="update"}}
   {{/each}}
 </ul>
 
 {{new-story saveStory="saveStory"}}
+
 
 {{#link-to 'index'}}Home{{/link-to}}
